@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BulgariaTravel</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Bulgaria<span>Travel</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Начало</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Галерия</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Блог</a>
+                        </li>
+                        <li class = "nav-item dropdown">
+                            <a href = "about.html" class = "nav-link" onclick="toggleDropdown(event)">За нас</a>
+                            <div class="dropdown-content">
+                                <a href="partners.html">Партньори</a>
+                                <a href="achievements.html">Постижения</a>
+
+                            </div>
+                        </li>
+                        <li class = "nav-item dropdown">
+                            <a href = "holidays.html" class = "nav-link" onclick="toggleDropdown(event)">Екскурзии</a>
+                            <div class="dropdown-content">
+                                <a href="flights.html">Самолетни билети</a>
+                                <a href="rentacar.html">Коли под наем</a>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex header-sm">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Блог</h1>
+                    <p>Тук сме, за да споделяме вдъхновяващи истории, ценни съвети и най-добрите дестинации от цял ​​свят. Готови ли сте да откриете света с нас?</p>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- blog section -->
+        <section id = "blog" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <h2 class = "sm-title">НАШИТЕ ПРЕДЛОЖЕНИЯ</h2>
+                    <h3 class = "lg-title">СПЕЦИАЛНИ ОФЕРТИ 2023</h3>
+                </div>
+
+                <div class = "blog-row">
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img src = "images/blog-1.jpg" alt = "blog">
+                            <span class = "blog-date">360 BGN</span>
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <span>Уикенд в Атина | 02/03-04/03 </span>
+                            <a href = "#">Изживейте уикенд пълен с културни съкровища и исторически блясък в Атина с нашата специална оферта!</a>
+                            <p class = "text">От обикаляне на древни храмове до гледане на вълнуващи артефакти в музеи, гарантираме ви незабравимо пътешествие в града на класическата цивилизация.</p>
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img src = "images/blog-2.jpg" alt = "blog">
+                            <span class = "blog-date">650 BGN</span>
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <span>Прага | 05/12-08/12 </span>
+                            <a href = "#">Изживейте магията на Прага с нашето уникално предложение.</a>
+                            <p class = "text">Открийте вълшебството на Прага чрез нашето уникално предложение и се потопете в неповторимата атмосфера на този прекрасен град.</p>
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img src = "images/blog-3.jpg" alt = "blog">
+                            <span class = "blog-date">oct 28, 2021</span>
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <span>Лондон | История</span>
+                            <a href = "#">
+                                Лондон е град с древна история, чиято утвърдена градска основа е поставена от римляните преди близо 2000 години. Оттогава той е израснал до световноизвестен град и културен център.</a>
+                            <p class = "text">През средновековието Лондон е станал един от най-големите градове в Европа, стана седалище на английския парламент и център на търговията и културата. През вековете, Лондон е преживял множество исторически събития - от Голямото пожарище през 1666 г., което унищожи големи части от града, до гражданските бомбардировки по време на Втората световна война.</p>
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img src = "images/blog-4.jpg" alt = "blog">
+                            <span class = "blog-date">oct 28, 2021</span>
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <span>Хавай | Почивка</span>
+                            <a href = "#">Този островен рай предлага безброй възможности за релаксация и приключения. </a>
+                            <p class = "text">Този островен рай предлага безброй възможности за релаксация и приключения. От изумителните плажове с бистри води до прегръдката на вулканичния пейзаж, Хавай предлага несравнимо приключение в природата. Можете да се потопите в изисканата хавайска култура, наслаждавайки се на традиционната музика, танци и богатството на местната кухня. Не забравяйте да изживеете вълнуващите възможности за сърфиране, гмуркане с маска и тръба или просто да се отпуснете на брега с едно майто тайни. В Хавай времето се забравя, а спомените остават завинаги.</p>
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img src = "images/blog-5.jpg" alt = "blog">
+                            <span class = "blog-date">oct 28, 2021</span>
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <span>Испания | Почивка</span>
+                            <a href = "#">
+                                Испания, страната на страстта и разнообразието, впечатлява с удивителна смесица от култури, изкуства и природни красоти. </a>
+                            <p class = "text">Тук историята оживява сред древни замъци, улични фестивали и градове, пропитани със средиземноморски дух. От величествените градове като Мадрид и Барселона до спокойните плажове на Коста дел Сол, Испания привлича с разнообразие - богати културни събития, великолепна гастрономия, фламенко танци и безкрайни възможности за отдих в сянката на палмите.</p>
+                           
+                            
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img src = "images/blog-6.jpg" alt = "blog">
+                            <span class = "blog-date">Септемрви 28, 2023</span>
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <span>НОВИНИ | ИНДИЯ </span>
+                            <a href = "#">Индия е избрана като втората най-посещавана държава в света!</a>
+                            <p class = "text">Подадените данни бяха събрани в продължение на една година. Докато Малдивите заемат първо място с 2 457 000 търсения в Google.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of blog section -->
+        
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Bulgaria<span>Travel</span>
+                    </a>
+                    <p class = "text"></p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Популярни дестинации:</h2>
+                    <ul>
+                        <li><a href = "#">Тайланд</a></li>
+                        <li><a href = "#">Aвстралия</a></li>
+                        <li><a href = "#">Малдиви</a></li>
+                        <li><a href = "#">Париж</a></li>
+                        <li><a href = "#">Германия</a></li>
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Абонирай се!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Въведи Email" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Абонирай се">
+                    </form>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
